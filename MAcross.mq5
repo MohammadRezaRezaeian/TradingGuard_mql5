@@ -7,7 +7,7 @@
 #property link      "https://www.tradeyaar.ir"
 #property version   "1.00"
 
-#define CALENDAR_MODULE
+// #define CALENDAR_MODULE
 // #define TECHNICAL_MODULE
 // #define SYMBOL_MODULE
 // #define GUARD_MODULE
@@ -52,7 +52,7 @@ void OnTick()
    double _Bid = tick.bid;
    double _Ask = tick.ask;
    
-   if(trade.CloseAllPositionsAtDayEnd()) return;
+   trade.CloseAllPositionsAtDayEnd();
 
    // Check buy signal
    if(buySignal())
