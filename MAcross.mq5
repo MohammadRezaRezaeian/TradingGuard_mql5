@@ -10,19 +10,21 @@
 // #define CALENDAR_MODULE
 // #define TECHNICAL_MODULE
 // #define SYMBOL_MODULE
-// #define GUARD_MODULE
+#define GUARD_MODULE
 
+
+input int FastMAPeriod = 10;     
+input int SlowMAPeriod = 30;     
+input double LotSize = 0.1;      
+input double StopLoss = 200;     
+input double TakeProfit = 400;
 
 #include "./filters/tradingFilter.mqh"
 
 // Global variables
 TradeFilters trade;
 
-input int FastMAPeriod = 10;     
-input int SlowMAPeriod = 30;     
-input double LotSize = 0.1;      
-input double StopLoss = 200;     
-input double TakeProfit = 400;   
+   
  
 double FastMA[], SlowMA[];
 int handleFast, handleSlow;
