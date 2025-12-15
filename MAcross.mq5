@@ -7,10 +7,12 @@
 #property link      "https://www.tradeyaar.ir"
 #property version   "1.00"
 
-// #define CALENDAR_MODULE
-// #define TECHNICAL_MODULE
+
+// #define GUARD_MODULE
 // #define SYMBOL_MODULE
-#define GUARD_MODULE
+// #define CALENDAR_MODULE
+#define PRICE_AREA_MODULE
+// #define TECHNICAL_MODULE
 
 
 input int FastMAPeriod = 10;     
